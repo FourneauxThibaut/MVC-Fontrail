@@ -1,0 +1,36 @@
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: first baseline;
+      -ms-flex-align: first baseline;
+          align-items: first baseline;
+}
+
+header nav ul:first-child {
+  width: 40%;
+}
+
+header nav ul:first-child li {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #15e4b0;
+}
+
+header nav ul:last-child {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav ul:last-child li {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=navbar.css.map */

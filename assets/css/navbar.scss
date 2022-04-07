@@ -1,0 +1,32 @@
+@import './variables';
+
+header{
+
+    nav{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        
+        ul:first-child{
+
+            width: 40%;
+
+            li{
+                font-size: 5rem;
+                font-weight: 800;
+                color: $color-green;
+            }
+        }
+        ul:last-child{
+
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+
+            li{
+                font-size: 2rem;
+            }
+        }
+    }
+}

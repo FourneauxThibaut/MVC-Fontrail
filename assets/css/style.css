@@ -1,0 +1,126 @@
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: first baseline;
+      -ms-flex-align: first baseline;
+          align-items: first baseline;
+}
+
+header nav ul:first-child {
+  width: 40%;
+}
+
+header nav ul:first-child li {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #15e4b0;
+}
+
+header nav ul:last-child {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav ul:last-child li {
+  font-size: 2rem;
+}
+
+section#comparator .comparator__container {
+  position: relative;
+  margin: 2rem 1rem;
+  padding: 4vh 5vh 10vh;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 7px 7px, #F4F6F8 7px, transparent 0);
+  background-size: 29px 29px;
+}
+
+section#comparator .comparator__container .comparator__font {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: #15e4b0;
+}
+
+::selection {
+  color: white;
+  background-color: #15e4b0;
+}
+
+body {
+  margin: 0 auto;
+  width: 85%;
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+button {
+  background: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7B8898;
+  border: 5px solid #D3DBE4;
+  padding: 0.4rem 1.3rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: repeating-linear-gradient(-45deg, #fff, #fff 8px, #F4F6F8 8px, #F4F6F8 16px);
+  background-size: 180px 180px;
+}
+
+button.active {
+  color: #fff;
+  background: repeating-linear-gradient(-45deg, #4ac5a6, #4ac5a6 8px, #77c9b6 8px, #77c9b6 16px);
+  background-size: 180px 180px;
+}
+
+button:hover {
+  background-size: auto;
+  background-size: 45.5px 45.5px;
+  -webkit-animation: Gradient 5s infinite linear;
+          animation: Gradient 5s infinite linear;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
