@@ -3,7 +3,7 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/src/Utility/Model.php');
 use GuzzleHttp\Exception\ClientException;
 
-class HomeModel extends Model
+class FontModel extends Model
 {
 
     public function get_google_api()

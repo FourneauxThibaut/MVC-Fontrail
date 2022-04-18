@@ -46,6 +46,16 @@ button{
     }
 }
 
+#comparator a{
+    color: $color-green;
+    transition-duration: 0.2s;
+
+    &:hover{
+        color: $color-light-green;
+        transition-duration: 0.3s;
+    }
+}
+
 @keyframes Gradient {
     0% {
      background-position:0%

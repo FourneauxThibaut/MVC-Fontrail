@@ -30,10 +30,6 @@ class Route {
 //      └──────────────┘
 public function middleware(object $route){
 
-    if(! $route->middleware){
-        return true;
-    }
-
     switch ($route->middleware) {
         case 'admin':
             return false;     
@@ -41,6 +37,10 @@ public function middleware(object $route){
 
         case 'auth':
             return false;     
+            break;
+        
+        default:
+            return true;
             break;
     }
 }
@@ -54,8 +54,8 @@ public function middleware(object $route){
         $method = $controller[1];
         $model = $this->folder.'Model';
 
-        require_once ($_SERVER['DOCUMENT_ROOT'].'/app/Controller/'.$this->folder.'/'.$file.'.php');
-        require_once ($_SERVER['DOCUMENT_ROOT'].'/app/Model/'.$this->folder.'/'.$model.'.php');
+        require ($_SERVER['DOCUMENT_ROOT'].'/app/Controller/'.$this->folder.'/'.$file.'.php');
+        require ($_SERVER['DOCUMENT_ROOT'].'/app/Model/'.$this->folder.'/'.$model.'.php');
         
         $controller = new $file();
         $controller->$method();

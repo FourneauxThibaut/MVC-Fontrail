@@ -106,6 +106,18 @@ button:hover {
           animation: Gradient 5s infinite linear;
 }
 
+#comparator a {
+  color: #15e4b0;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+#comparator a:hover {
+  color: #77c9b6;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0%;

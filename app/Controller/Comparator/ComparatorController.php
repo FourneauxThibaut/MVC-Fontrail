@@ -2,7 +2,7 @@
 
 require($_SERVER['DOCUMENT_ROOT'] . '/src/Utility/Controller.php');
 
-class HomeController extends Controller
+class ComparatorController extends Controller
 {
     public $model;
 
@@ -11,7 +11,7 @@ class HomeController extends Controller
 //      └─────────────┘
     public function __construct()
     {        
-        $this->model = new HomeModel();
+        $this->model = new ComparatorModel();
     }
 
 //      ┌─────────┐
@@ -19,15 +19,13 @@ class HomeController extends Controller
 //      └─────────┘
     public function index()
     {
-        $google_font = $this->model->get_google_api();
-
-        $data = [
-            'google_font' => $google_font['items']
-        ];
+        foreach ($_GET as $key => $value) {
+            $data[$key] = $value;
+        }
         $head = [
-            'title' => 'FontRail | Home'
+            'title' => 'FontRail | Comparator'
         ];
-
-        return $this->view('home.index', $data, $head);
+        
+        return $this->view('comparator.index', $data, $head);
     }
 }
